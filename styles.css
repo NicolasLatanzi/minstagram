@@ -1,0 +1,235 @@
+/* General */
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+
+.my-navbar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-camera {
+    height: 20px;
+    color: rgba(13, 90, 206, 255);
+    font-size: 30px;
+}
+
+.title {
+    font-family: 'Cookie', cursive;
+    color: rgba(13, 90, 206, 255);
+    font-size: 45px;
+    margin: 0;
+}
+
+.logo a,
+.pictures a {
+    text-decoration: none;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto 50px;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 430px;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(185, 184, 184, 0.45);
+    border-radius: 2px;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.card-icon {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin: 0;
+    align-self: center;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+.a-icon {
+    margin: 0;
+    align-self: center;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.text-icon {
+    text-decoration: none;
+}
+
+
+.card-name,
+.card-date {
+    margin-left: 10px;
+}
+
+
+.card-image {
+    height: 298px;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-bottom-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 5px auto 0;
+}
+
+.fa-heart,
+.fa-bookmark,
+.fa-ellipsis-h {
+    color: rgb(84, 83, 83);
+    font-size: 25px;
+}
+
+.fa-ellipsis-h {
+    margin-right: 2px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 9px 1px rgba(157, 157, 157, 0.524);
+    transition: all .1s ease-in-out;
+}
+
+.card-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.card-button:hover {
+    opacity: .7;
+}
+
+.fa-ellipsis-h:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.fa-camera:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+.dark-mode-nav {
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.274);
+    transition: all .4s ease-in-out;
+}
+
+.icon-to-change {
+    background: none;
+    font-size: 22px;
+    border: none;
+}
+
+.fa-sun {
+    color: black;
+    transition: all .4s ease-in-out;
+}
+
+.fa-moon {
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+
+
+/* Dark mode button  */
+
+main {
+    position: relative;
+}
+
+#toggleButton {
+    background: none;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    box-shadow: 0px 0px 9px 1px rgba(157, 157, 157, 0.524);
+    cursor: pointer;
+}
+
+
+
+/* Media queries */
+
+@media (max-width: 480px) {
+    .cards {
+        margin-top: 90px;
+    }
+
+    #toggleButton {
+        right: 30px;
+        top: -70px;
+    }
+}
